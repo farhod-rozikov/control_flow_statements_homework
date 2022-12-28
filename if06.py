@@ -13,4 +13,19 @@ def main(a,b,c):
     Returns:
         string: string with the result
     """
-    return
+    pos_count = 0
+    answer =  ''
+    if a > 0:
+        pos_count += 1
+    if b > 0:
+        pos_count += 1
+    if c > 0:
+        pos_count += 1    
+
+    if pos_count > 1:
+        answer = "there are a lot of positive numbers"
+    else:
+        answer = "there are a lot of negative numbers"
+    return answer
+
+print(main(1,-3,4))
