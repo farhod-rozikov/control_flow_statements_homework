@@ -8,4 +8,13 @@ def main(a,b,c):
     returns:
         integer: the number of positive numbers in the given numbers
     """
-    return
+    pos_count = 0
+    if a > 0:
+        pos_count += 1
+    if b > 0:
+        pos_count += 1
+    if c > 0:
+        pos_count += 1
+    return pos_count
+
+print(main(-1,2,-3))
