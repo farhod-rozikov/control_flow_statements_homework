@@ -11,4 +11,16 @@ def main(a):
     Returns:
         string: the message to print
     """
-    return
+    if abs(a // 100) < 1:
+        if a % 2 == 0:
+            mes = "two-digit even number"
+        else:
+            mes = "two-digit odd number"
+    if abs(a // 100) >= 1:
+        if a % 2 == 0:
+            mes = "three-digit even number"
+        else:
+            mes = "three-digit odd number"
+    return mes
+
+print(main(10))
